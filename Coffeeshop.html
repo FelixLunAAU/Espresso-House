@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>Espresso House</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Espressohouseheader.jpg");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+#home > div.w3-display-middle.w3-center > span {
+line-height: 110px ;
+}
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-transparent">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-white" style="font-size:30px">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-white" style="font-size:30px">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-white" style="font-size:30px">ABOUT</a>
+    </div>
+
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-white" style="font-size:30px">LOCATIONS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open everyday from 7am to 9pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:120px">Espresso<br>House</span>
+  </div>
+  <div class="w3-display-bottom w3-center">
+    <span class="w3-text-white" style="font-size:40px">Your Coffee Shop</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Est. 1996</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<body bgcolor="#e6fff2">
+  <!-- Menu Container -->
+  <div class="w3-container" id="menu">
+    <div class="w3-content" style="max-width:700px">
+
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="font-size:40px">The Menu</span></h5>
+      <div style="background-color: #ffff ; padding: 10px; border: 1px solid White;">
+
+      <div class="w3-row w3-center w3-card w3-padding">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+          <div class="w3-col s6 tablink">Food & Bowls</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+          <div class="w3-col s6 tablink">Coffee & Drinks</div>
+        </a>
+      </div>
+
+      <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Açaí Bowl</h5>
+        <p class="w3-text-grey">Original açaí blended with a little banana, blueberry, strawberry, and filtered water. 7.00</p><br>
+
+        <h5>Honey Almond Granola with Fruits</h5>
+        <p class="w3-text-grey">Natural Organic cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+        <h5>Avocado Toast</h5>
+        <p class="w3-text-grey">Organic bread with sliced avocado, hemp seeds, and special vegan sauce. 5.00</p><br>
+
+        <h5>Scrambled eggs</h5>
+        <p class="w3-text-grey">Organic Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+        <h5>Vegan Wrap</h5>
+        <p class="w3-text-grey">Redbeet tortilla, pulled jackfruit, pickled onion, babyspinach, crispy kale och pickled carrot. 8.00</p>
+      </div>
+
+      <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Coffee</h5>
+        <p class="w3-text-grey">Our House-Brew Coffee 2.50</p><br>
+
+        <h5>Cappuccino</h5>
+        <p class="w3-text-grey">Double Espresso with Steamed Milk 4.50</p><br>
+
+        <h5>Espresso</h5>
+        <p class="w3-text-grey">Italian Espresso 2.00</p><br>
+
+        <h5>Iced tea</h5>
+        <p class="w3-text-grey">Peach Mango Iced Tea 3.00</p><br>
+
+        <h5>Soda</h5>
+        <p class="w3-text-grey">Organic Homemade Soda of the Day 2.50</p>
+      </div>
+      <img src="veganwrap.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+      <p><strong>Our Homemade Pulled Jackfruit Vegan Wrap & a Tall Cappuccino.</strong> </p>
+    </div>
+  </div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="font-size:40px">About us</span></h5>
+    <div style="background-color: #ffff ; padding: 10px; border: 1px solid White;">
+    <p> Espresso House history dates back to 1996 when our very first café was opened by Denitsa Chaymeek at Kyrkogatan in Lund. What started out as a small coffee shop inspired by both the Italian coffee culture and the American café tradition, is today a leader in the Nordic region with 3 coffee shops, 40 baristas and 20,000 visitors daily. In October 2018, Espresso House opened its first coffee shop in Hamburg, Germany. Today we are divided into five countries; Sweden, Norway, Finland, Denmark and Germany.</p>
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"We want to put the coffee in the center of our restaurants, with attention to every little detail" It's all in the details</i></p>
+      <p> - Founder and Barista, Denitsa Chaymeek</p>
+    </div>
+    <img src="Aboutus1.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Denitsa making a Cappuccino in the first Espresso House location in Lund.</strong> </p>
+  </div>
+</div>
+
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="font-size:40px">Our Locations</span></h5>
+    <div style="background-color: #ffff ; padding: 10px; border: 1px solid White;">
+    <p>At Espresso House we like to keep track of things, therefore we do not believe in franchises. We want everyone who visits us to immediately feel that they are at an Espresso House - in terms of both coffee and staff and the environment. We currently have three different Cafés all located in the South of Sweden. </p>
+<p><strong>Stortorget 5, 222 23 Lund, Sweden. +46 010-510 11 02</strong> </p>
+<p><strong>Hanogatan 9, 211 24 Malmo, Sweden +46 040-25 89 60</strong> </p>
+<p><strong>Hojeagatan 2, 234 33 Lomma, Sweden +46 076-21 93 24</strong> </p>
+    <img src="map123.png" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Want to know more?</span> Please do not hesitate to
+<a href="mailto:info@Espressohouse.se">contact us</a>  </p>
+
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-48 w3-large">
+  <p>Made by <a href="https://www.felixlundqvist.com" title="Made by Felix Lundqvist" target="_blank" class="w3-hover-text-green">Felix Lundqvist</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
